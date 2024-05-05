@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Memory Master</h1>
+        <img src="./assets/brain.gif" alt="">
+    </div>
+
+    <div class="score">
+        <div class="moves">
+            <p>Moves : <span id="moves">0</span></p>
+            <p>Best Moves : <span id="best-moves">_</span></p>
+        </div>
+
+        <div class="time">
+            <p>Time : <span id="time">00 : 00 : 00</span></p>
+            <p>Best Time : <span id="best-time">_</span></p>
+        </div>
+    </div>
+
+    <div class="grid-container">
+       
+    </div>
+
+    <div class="footer">
+        <button id="Clear"class="button-82-pushable-red" role="button" onclick="clearHistory()">
+            <span class="button-82-shadow-red"></span>
+            <span class="button-82-edge-red"></span>
+            <span class="button-82-front-red text">
+              Reset Records
+            </span>
+          </button>
+    
+          <button id="Restart" class="button-82-pushable-blue" role="button" onclick="restartGame()">
+            <span class="button-82-shadow-blue"></span>
+            <span class="button-82-edge-blue"></span>
+            <span class="button-82-front-blue text">
+              Restart Game
+            </span>
+          </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
