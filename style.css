@@ -73,16 +73,6 @@ p{
     transform-style: preserve-3d;
 }
 
-@media screen and (max-width: 770px) {
-    .grid-container{
-        grid-template-columns: repeat(3, auto);
-    }
-
-    .card{
-        height: 15vh;
-    }
-}
-
 .footer{
     display: flex;
     justify-content: center;
@@ -98,7 +88,7 @@ p{
 }
 
 .front img{
-    height: 50px; /*adjust*/
+    height: 50px; 
 }
 
 .back{
@@ -326,4 +316,18 @@ button{
 margin: 0px 10px;
 font-size: 20px;
 font-weight: 700;
+}
+
+@media screen and (max-width: 770px) {
+    .grid-container{
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .card{
+        height: 15vh;
+    }
+
+    .front img{
+        height: 40px;
+    }
 }
